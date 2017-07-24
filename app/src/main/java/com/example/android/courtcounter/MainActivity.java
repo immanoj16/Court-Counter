@@ -1,13 +1,13 @@
 package com.example.android.courtcounter;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 0;
+    int scoreTeamA = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,18 +16,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addThreeForTeamA(View view) {
-        score += 3;
-        displayForTeamA(score);
+        scoreTeamA += 3;
+        displayForTeamA(scoreTeamA);
     }
 
     public void addTwoForTeamA(View view) {
-        score += 2;
-        displayForTeamA(score);
+        scoreTeamA += 2;
+        displayForTeamA(scoreTeamA);
     }
 
     public void addOneForTeamA(View view) {
-        score += 1;
-        displayForTeamA(score);
+        scoreTeamA += 1;
+        displayForTeamA(scoreTeamA);
     }
     /**
      * Displays the given score for Team A.
